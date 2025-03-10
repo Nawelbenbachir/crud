@@ -57,7 +57,7 @@ if (isset( $_POST['submit'])){  //si le formulaire a été soumis
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php
+    <?php //on ajoute la barre de menu dans chaque page 
          require_once 'composants/menu.php';
     ?>
     <h1>Connectez-vous</h1>

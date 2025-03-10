@@ -3,7 +3,7 @@
     //_once pour vérifier que l'instruction n'a pas déjà été incluse
     //include_once 'start.php';
     //require_once 'composants/start.php'; //vérifier que l'instruction existe sinon exit (plus sécurisé)
-    session_start();
+    session_start(); // au lieu de require pour avoir accès à l'accueil sans avoir à se connecter
 ?>
 <!DOCTYPE html>
 <html lang="fr">

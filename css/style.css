@@ -1,3 +1,7 @@
+.body{
+    font-family: Arial,sans-serif;
+}
+
 .menu{
     display :flex;
     align-items:center;
@@ -7,4 +11,23 @@
 .menu li{
     list-style :none;
     margin: 0 10px;
+}
+.menu a{
+    text-decoration:none;
+    margin: 0 10px;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+table{
+/* collapse pour éviter les doubles lignes */
+    border-collapse: collapse; 
+    width : 100%
+}
+
+table td, tables th {
+    border: 1px solid #ddd;
+    padding: 8px;
 }

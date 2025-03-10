@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <?php
+    <?php //on ajoute le menu dans chaque page
         require_once 'composants/menu.php';
     ?>
     <h1>Cours</h1>
