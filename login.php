@@ -54,8 +54,12 @@ if (isset( $_POST['submit'])){  //si le formulaire a été soumis
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connectez vous</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <?php
+         require_once 'composants/menu.php';
+    ?>
     <h1>Connectez-vous</h1>
     <!-- champ de formulaire= form 
      action = fichier sur lequel on envoie le formualire
