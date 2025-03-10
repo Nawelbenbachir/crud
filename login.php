@@ -6,10 +6,7 @@
 
 session_start(); //on démarre la session pour utiliser les $SESSION
 
-define ('DB_HOST', 'localhost');
-define ('DB_NAME', 'crud');
-define ('DB_USER', 'root');
-define ('DB_PASSWORD', '');
+require_once 'config.php';
 $pdo= new PDO ('mysql:host='.DB_HOST.';dbname='.DB_NAME,DB_USER,DB_PASSWORD);
 
 if (isset( $_POST['submit'])){  //si le formulaire a été soumis
@@ -25,8 +22,11 @@ if (isset( $_POST['submit'])){  //si le formulaire a été soumis
     //var_dump comme echo mais pour récupérer des objets plus complexes comme tableau
     //var_dump($data);
     if ($data){ //la personne existe
-        if($mot_de_passe ==$data['mot_de_passe']){
-            echo "Connexion réussie !";
+        //vérifie si les mots de passe correspondent 
+        //password_verify est une méthode pour encrypter les mots de passes
+        if(password_verify($mot_de_passe, $data['mot_de_passe'])){
+            $_SESSION['utilisateur']=$utilisateur;
+            header('Location:index.php');
         }
         else{
             echo "Username/password invalide";

@@ -34,16 +34,16 @@ CREATE TABLE inscription(
 -- Insertion des données dans la table personnes
 INSERT INTO personnes (nom, prenom, email, mot_de_passe, telephone, admin, etudiant, professeur) 
 VALUES 
-('Dupont', 'Jean', 'jean.dupont@example.com', 'motdepasse123', '0123456789', FALSE, TRUE, FALSE),
-('Martin', 'Claire', 'claire.martin@example.com', 'mdp456', '0987654321', TRUE, FALSE, TRUE),
-('Leclerc', 'Pierre', 'pierre.leclerc@example.com', 'mypassword789', '0112233445', FALSE, TRUE, FALSE),
-('Lemoine', 'Sophie', 'sophie.lemoine@example.com', 'password321', '0167890123', FALSE, TRUE, FALSE),
-('Bernard', 'Luc', 'luc.bernard@example.com', 'mdp12345', '0176543210', FALSE, TRUE, FALSE),
-('Durand', 'Marie', 'marie.durand@example.com', 'password987', '0134657890', FALSE, TRUE, FALSE),
-('Girard', 'Alice', 'alice.girard@example.com', 'mypwd456', '0145796328', FALSE, TRUE, FALSE),
-('Roux', 'Thomas', 'thomas.roux@example.com', 'securepassword321', '0182456809', FALSE, TRUE, FALSE),
-('Petit', 'Julien', 'julien.petit@example.com', 'newpassword123', '0193847562', FALSE, TRUE, FALSE),
-('Faure', 'Nathalie', 'nathalie.faure@example.com', 'password1234', '0156278345', TRUE, FALSE, TRUE);
+('Dupont', 'Jean', 'jean.dupont@example.com','$2y$10$j5EIXqNn5OPmzwBrelKpUOCNKcJ7Dmo.szYXWPMuKPrHOZses.ucy', '0123456789', FALSE, TRUE, FALSE),
+('Martin', 'Claire', 'claire.martin@example.com', '$2y$10$u3CeAnHbyNTnnJg7QZ5SsuBjg8iAaeXbbujy0glei3wzaoL2hK.d6', '0987654321', TRUE, FALSE, TRUE),
+('Leclerc', 'Pierre', 'pierre.leclerc@example.com', '$2y$10$04/nb0idN5164mnw71X2xuRjIKELFwyRPSCYWnkoDka220pXp1.f.', '0112233445', FALSE, TRUE, FALSE),
+('Lemoine', 'Sophie', 'sophie.lemoine@example.com', '$2y$10$mqDHZGf4GNayNzOKfsaSeuGwlmQX.XTEKk6iEN4IzOlgxwB6AkRNK', '0167890123', FALSE, TRUE, FALSE),
+('Bernard', 'Luc', 'luc.bernard@example.com', '$2y$10$XMIZWwt80yM4H1e84KbL4.JOQZJ/t35QgfJuC/7mk/pCpA1RqhsPu', '0176543210', FALSE, TRUE, FALSE),
+('Durand', 'Marie', 'marie.durand@example.com', '$2y$10$9NofGH8qauZ3p7N76ZVPYO4EZUujE7/JcnYpZdyj7.NWrjUkUV3v.', '0134657890', FALSE, TRUE, FALSE),
+('Girard', 'Alice', 'alice.girard@example.com', '$2y$10$SYJf5lfdNbpBhEVlpDYuF.GEiiUtiS4vZIMtZkBfFmENNyRiWnbge', '0145796328', FALSE, TRUE, FALSE),
+('Roux', 'Thomas', 'thomas.roux@example.com', '$2y$10$eDgbgrp6p1BhcsCapr3MlOg7DSlAiB6x.JWlZRmHUafgLgxzrallK', '0182456809', FALSE, TRUE, FALSE),
+('Petit', 'Julien', 'julien.petit@example.com', '$2y$10$NEMCH0cogzuxjfMq/Mvd9OCMseai4D/.x2DArYaixopg2R/8/mzFa', '0193847562', FALSE, TRUE, FALSE),
+('Faure', 'Nathalie', 'nathalie.faure@example.com', '$2y$10$wYoG4xI8asLBak8D0PGpVezHeta5cKqm3Bq8ubs.5RPSSG5XVCvKq', '0156278345', TRUE, FALSE, TRUE);
 
 -- Insertion des données dans la table cours
 INSERT INTO cours (nom) 
