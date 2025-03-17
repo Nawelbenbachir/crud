@@ -14,11 +14,12 @@
 }
 .menu a{
     text-decoration:none;
+    color:black;
     margin: 0 10px;
 }
 
 .menu a:hover{
-    color: red;
+    color:cornflowerblue;
 }
 
 table{
@@ -30,4 +31,54 @@ table{
 table td, tables th {
     border: 1px solid #ddd;
     padding: 8px;
+}
+/* formulaire pour ajouter un étudiant */
+form.etudiant{
+    margin: 20px;
+}
+
+form.etudiant>div{
+    margin: 10px 0;
+}
+
+form.etudiant label{
+    display: inline-block;
+    width: 100px;
+}
+/* augmenter la hauteur des champs de saisie */
+form.etudiant input[type="text"], 
+form.etudiant input[type="email"],
+form.etudiant input[type="tel"]{
+    width:200px;
+    padding: 5px;
+}
+
+form.etudiant input[type="submit"]{
+    padding: 5px 10px;
+    background-color:cornflowerblue;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+
+}
+form.etudiant div.checkbox{
+    margin: 20px 0;
+}
+
+a.bouton{
+    padding: 5px 10px;
+    background-color:cornflowerblue ;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a.bouton.bleu{
+    background-color: cornflowerblue;
+}
+a.bouton.rouge{
+    background-color: rgba(241, 79, 79, 0.966);
+}
+a.bouton.vert{
+    background-color: rgb(43, 177, 43);
 }

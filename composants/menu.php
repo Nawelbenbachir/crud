@@ -1,7 +1,7 @@
 
 <ul class="menu">
     <li><a href="index.php">Accueil </a></li>
-    <li><a href="etudiant.php">Etudiants</a></li>
+    <li><a href="etudiants.php">Etudiants</a></li>
     <li><a href="cours.php">Cours </a></li>
     <?php
     //option connexion si on est déconnecté ou déconnexion dans le menu
